@@ -1,0 +1,6 @@
+path: train_data
+train: images/train
+val: images/val
+
+nc: 6
+names: ['truck', 'mobil civil', 'tank', 'pesawat komersil', 'pesawat tempur', 'helikopter']

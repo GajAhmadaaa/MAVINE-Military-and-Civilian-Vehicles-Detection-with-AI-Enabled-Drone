@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <title>MAVINE</title>
+		 <meta charset="utf-8" />
+	</head>
+	
+<body>
+
+<h2 align="center">Military and Civilian Vehicles Detection with AI-Enabled Drone</h2>
+
+<div style="display: flex; flex-display: row; flex-wrap: wrap; justify-content: center">	
+	{%for i in range(0, len)%}
+		<div style="padding : 10px">
+		    <a target="_blank" href="{{url_for('static', filename=dir_list[i])}}">
+				<img src="{{url_for('static', filename=dir_list[i])}}" alt={{dir_list[i]}} style="width:400px">
+			</a>
+			<p>{{dir_list[i]}}</p>
+		</div>
+	{%endfor%}
+</div>
+        
+</body>
+
+</html>
